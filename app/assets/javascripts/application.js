@@ -15,13 +15,14 @@
 //= require turbolinks
 //= require_tree .
 
-var React = require('react'),
-mui = require('material-ui'),
-RaisedButton = mui.RaisedButton;
+React = require('react');
+ReactDOM = require('react-dom');
+Mui = require('material-ui');
 
 $(function(){
-  React.render(
+  var RaisedButton = Mui.RaisedButton;
+  ReactDOM.render(
     <RaisedButton label="hello" />,
-    document.body
+    document.getElementById('example')
   );
 });
